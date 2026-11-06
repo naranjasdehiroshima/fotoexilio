@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exilio en la CDMX, antes y ahora</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{--bg:#f3f4f6;--paper:#fff;--ink:#1d1f27;--muted:#5d6170;--line:#d9dbe2;--accent:#5b3a7a;
+--ok:#2f6b4f;--ok-soft:#e3f0e9;--mid:#8a5a12;--mid-soft:#f6ecd9;--no:#8b2f2f;--no-soft:#f5e3e3;
+--f-display:"Instrument Serif",Georgia,serif;--f-body:"IBM Plex Sans",system-ui,sans-serif;--f-mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#14151a;--paper:#1d1f26;--ink:#e9e9ee;--muted:#a3a6b3;--line:#30333d;--accent:#c3a6de;
+--ok:#8fd0ae;--ok-soft:#1d3029;--mid:#e3b56a;--mid-soft:#352a17;--no:#ec9a9a;--no-soft:#3a2224;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body)}
+.wrap{max-width:1180px;margin:0 auto;padding:40px 16px 64px}
+.eyebrow{font:12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font:400 clamp(34px,5vw,54px)/1.05 var(--f-display);margin:8px 0 12px;text-wrap:balance}
+h1 em{color:var(--accent)}
+.lede{max-width:68ch;color:var(--muted);margin:0}
+#map{height:380px;border:1px solid var(--line);border-radius:6px;margin:28px 0 8px}
+.mapnote{font:12px var(--f-mono);color:var(--muted);margin:0 0 20px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.chip{font:500 13px var(--f-body);border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+@media(max-width:420px){.grid{grid-template-columns:1fr}}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:18px;display:grid;gap:10px;align-content:start;min-width:0}
+.top{display:flex;justify-content:space-between;gap:10px}
+.num{font:12px var(--f-mono);color:var(--muted)}
+.pill{font:500 11px var(--f-mono);text-transform:uppercase;padding:3px 8px;border-radius:3px}
+.A{background:var(--ok-soft);color:var(--ok)}.B{background:var(--mid-soft);color:var(--mid)}.C{background:var(--no-soft);color:var(--no)}
+h2{font:400 24px/1.15 var(--f-display);margin:0}
+.year{color:var(--accent);font-style:italic}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}
+dt{font:11px var(--f-mono);text-transform:uppercase;color:var(--muted);padding-top:3px}
+dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.foot{display:flex;flex-wrap:wrap;gap:8px 14px;padding-top:10px;border-top:1px dashed var(--line);font-size:13px}
+.foot a{color:var(--accent);font-weight:500;text-decoration:none}
+/* comparador antes/después */
+.cmp{position:relative;aspect-ratio:4/3;max-width:100%;overflow:hidden;border-radius:4px;background:var(--line)}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cmp .after{clip-path:inset(0 0 0 var(--x,50%))}
+.cmp input{position:absolute;inset:auto 0 8px;width:calc(100% - 16px);margin:0 8px}
+.cmp .tag{position:absolute;top:6px;font:11px var(--f-mono);background:rgba(0,0,0,.6);color:#fff;padding:2px 6px;border-radius:3px}
+.credit{font:11px var(--f-mono);color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Refotografía · exilio republicano 1939</div>
+  <h1>El exilio en la Ciudad de México, <em>antes y ahora</em></h1>
+  <p class="lede">Lugares del exilio republicano español en la capital: la fotografía de archivo, el punto exacto donde se tomó y cómo se ve hoy. Proyecto en curso; los datos viven en <code>data/lugares.json</code>.</p>
+  <div id="map"></div>
+  <p class="mapnote">En el mapa solo aparecen los lugares con coordenadas. Las marcadas como aproximadas falta verificarlas en campo.</p>
+  <div class="bar" id="bar"></div>
+  <main class="grid" id="grid"></main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const L_={A:"Foto identificada",B:"Lugar seguro",C:"Por ubicar"};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const maps=q=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q+", Ciudad de México");
+fetch("data/lugares.json").then(r=>r.json()).then(D=>{
+  const map=L.map("map").setView([19.425,-99.15],12);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap"}).addTo(map);
+  D.filter(d=>d.coords).forEach(d=>L.marker(d.coords).addTo(map)
+    .bindPopup(`<b>${esc(d.id)}. ${esc(d.titulo)}</b><br>${esc(d.lugar)}${d.coords_verificadas?"":"<br><i>coordenadas aproximadas</i>"}`));
+  const grid=document.getElementById("grid");
+  grid.innerHTML=D.map(d=>`
+  <article class="card" data-s="${d.estado}">
+    <div class="top"><span class="num">Nº ${esc(d.id)}</span><span class="pill ${d.estado}">${L_[d.estado]}</span></div>
+    ${d.foto_antes&&d.foto_ahora?`<div class="cmp"><img src="${esc(d.foto_antes)}" alt="${esc(d.titulo)}, ${esc(d.fecha)}"><img class="after" src="${esc(d.foto_ahora)}" alt="${esc(d.titulo)}, hoy"><span class="tag" style="left:6px">${esc(d.fecha)}</span><span class="tag" style="right:6px">${esc((d.fecha_refoto||"").slice(0,4)||"hoy")}</span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y ahora" oninput="this.parentNode.style.setProperty('--x',this.value+'%')"></div><div class="credit">${esc(d.credito_antes)}</div>`:""}
+    <h2>${esc(d.titulo)} <span class="year">${esc(d.fecha)}</span></h2>
+    <dl><dt>Fondo</dt><dd>${esc(d.fondo)}</dd><dt>Toma</dt><dd>${esc(d.toma)}</dd><dt>Lugar</dt><dd>${esc(d.lugar)}</dd><dt>Hoy</dt><dd>${esc(d.hoy)}</dd></dl>
+    <div class="foot"><a href="${maps(d.consulta_maps)}" target="_blank" rel="noopener">Ver en Maps</a>${d.fuentes.map(f=>`<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo)}</a>`).join("")}</div>
+  </article>`).join("");
+  const bar=document.getElementById("bar");
+  const n=k=>k==="all"?D.length:D.filter(d=>d.estado===k).length;
+  bar.innerHTML=["all","A","B","C"].map(k=>`<button class="chip" data-f="${k}" aria-pressed="${k==="all"}">${k==="all"?"Todas":L_[k]} (${n(k)})</button>`).join("");
+  bar.addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;
+    bar.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));
+    grid.querySelectorAll(".card").forEach(c=>c.hidden=!(b.dataset.f==="all"||c.dataset.s===b.dataset.f));});
+});
+</script>
+</body>
+</html>

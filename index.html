@@ -39,12 +39,23 @@ dd{margin:0;min-width:0;overflow-wrap:anywhere}
 .foot{display:flex;flex-wrap:wrap;gap:8px 14px;padding-top:10px;border-top:1px dashed var(--line);font-size:13px}
 .foot a{color:var(--accent);font-weight:500;text-decoration:none}
 /* comparador antes/después */
-.cmp{position:relative;aspect-ratio:4/3;max-width:100%;overflow:hidden;border-radius:4px;background:var(--line)}
-.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.cmp .after{clip-path:inset(0 0 0 var(--x,50%))}
-.cmp input{position:absolute;inset:auto 0 8px;width:calc(100% - 16px);margin:0 8px}
-.cmp .tag{position:absolute;top:6px;font:11px var(--f-mono);background:rgba(0,0,0,.6);color:#fff;padding:2px 6px;border-radius:3px}
-.credit{font:11px var(--f-mono);color:var(--muted)}
+.media{position:relative;aspect-ratio:4/3;max-width:100%;overflow:hidden;border-radius:4px;background:var(--line);--x:50%;user-select:none}
+.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.media .before{filter:grayscale(1)}
+.media.cmp .after{clip-path:inset(0 0 0 var(--x))}
+.media .divider{position:absolute;top:0;bottom:0;left:var(--x);width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 6px rgba(0,0,0,.5);pointer-events:none}
+.media .knob{position:absolute;top:50%;left:var(--x);width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:#fff;color:#222;display:grid;place-items:center;font:600 14px var(--f-mono);box-shadow:0 1px 6px rgba(0,0,0,.4);pointer-events:none}
+.media input[type=range]{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize}
+.media input[type=range]:focus-visible~.knob{outline:3px solid var(--accent)}
+.media .tag{position:absolute;top:8px;font:11px var(--f-mono);text-transform:uppercase;letter-spacing:.05em;background:rgba(0,0,0,.65);color:#fff;padding:3px 7px;border-radius:3px;pointer-events:none}
+.media .tl{left:8px}.media .tr{right:8px}
+.empty{display:grid;grid-template-columns:1fr 1fr;aspect-ratio:auto;background:none;border:1px dashed var(--line)}
+.empty>div{padding:14px;display:grid;gap:6px;align-content:start;font-size:13px;color:var(--muted);min-width:0}
+.empty>div+div{border-left:1px dashed var(--line)}
+.empty b{font:500 11px var(--f-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink)}
+.empty a{color:var(--accent);font-weight:500}
+@media(max-width:420px){.empty{grid-template-columns:1fr}.empty>div+div{border-left:0;border-top:1px dashed var(--line)}}
+.credit{font:11px var(--f-mono);color:var(--muted);display:grid;gap:2px}
 </style>
 </head>
 <body>
@@ -61,6 +72,27 @@ dd{margin:0;min-width:0;overflow-wrap:anywhere}
 <script>
 const L_={A:"Foto identificada",B:"Lugar seguro",C:"Por ubicar"};
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ahoraTag=d=>d.ahora_provisional?"hoy (provisional)":(d.fecha_refoto||"").slice(0,4)||"hoy";
+function media(d){
+  const A=d.foto_antes, N=d.foto_ahora;
+  const cred=[A&&d.credito_antes?"Antes: "+d.credito_antes:"",N&&d.credito_ahora?"Ahora: "+d.credito_ahora:""].filter(Boolean).map(c=>`<span>${esc(c)}</span>`).join("");
+  const credit=cred?`<div class="credit">${cred}</div>`:"";
+  if(A&&N) return `<div class="media cmp">
+      <img class="before" src="${esc(A)}" alt="${esc(d.titulo)}, ${esc(d.fecha)}" loading="lazy">
+      <img class="after" src="${esc(N)}" alt="${esc(d.titulo)}, hoy" loading="lazy">
+      <span class="divider"></span>
+      <input type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y ahora" oninput="this.parentNode.style.setProperty('--x',this.value+'%')">
+      <span class="knob" aria-hidden="true">⇆</span>
+      <span class="tag tl">${esc(d.fecha)}</span><span class="tag tr">${esc(ahoraTag(d))}</span>
+    </div>${credit}`;
+  if(A||N) return `<div class="media"><img class="${A?"before":""}" src="${esc(A||N)}" alt="${esc(d.titulo)}" loading="lazy">
+      <span class="tag tl">${A?esc(d.fecha):esc(ahoraTag(d))}</span><span class="tag tr">${A?"falta refoto":"falta foto de archivo"}</span></div>${credit}`;
+  const da=d.donde_antes||{}, dn=d.descarga_ahora;
+  return `<div class="media empty">
+    <div><b>Antes · pendiente</b><span>${esc(da.texto||"Fondo por identificar")}</span>${da.url?`<a href="${esc(da.url)}" target="_blank" rel="noopener">Ir al fondo</a>`:""}</div>
+    <div><b>Ahora · pendiente</b><span>Refoto propia desde el mismo punto.</span>${dn?`<a href="${esc(dn.url)}" target="_blank" rel="noopener">Foto provisional en Commons (${esc(dn.licencia)})</a>`:""}</div>
+  </div>`;
+}
 const maps=q=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q+", Ciudad de México");
 fetch("data/lugares.json").then(r=>r.json()).then(D=>{
   const map=L.map("map").setView([19.425,-99.15],12);
@@ -71,7 +103,7 @@ fetch("data/lugares.json").then(r=>r.json()).then(D=>{
   grid.innerHTML=D.map(d=>`
   <article class="card" data-s="${d.estado}">
     <div class="top"><span class="num">Nº ${esc(d.id)}</span><span class="pill ${d.estado}">${L_[d.estado]}</span></div>
-    ${d.foto_antes&&d.foto_ahora?`<div class="cmp"><img src="${esc(d.foto_antes)}" alt="${esc(d.titulo)}, ${esc(d.fecha)}"><img class="after" src="${esc(d.foto_ahora)}" alt="${esc(d.titulo)}, hoy"><span class="tag" style="left:6px">${esc(d.fecha)}</span><span class="tag" style="right:6px">${esc((d.fecha_refoto||"").slice(0,4)||"hoy")}</span><input type="range" min="0" max="100" value="50" aria-label="Comparar antes y ahora" oninput="this.parentNode.style.setProperty('--x',this.value+'%')"></div><div class="credit">${esc(d.credito_antes)}</div>`:""}
+    ${media(d)}
     <h2>${esc(d.titulo)} <span class="year">${esc(d.fecha)}</span></h2>
     <dl><dt>Fondo</dt><dd>${esc(d.fondo)}</dd><dt>Toma</dt><dd>${esc(d.toma)}</dd><dt>Lugar</dt><dd>${esc(d.lugar)}</dd><dt>Hoy</dt><dd>${esc(d.hoy)}</dd></dl>
     <div class="foot"><a href="${maps(d.consulta_maps)}" target="_blank" rel="noopener">Ver en Maps</a>${d.fuentes.map(f=>`<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo)}</a>`).join("")}</div>

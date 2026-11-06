@@ -2,7 +2,7 @@
 
 **El exilio en la Ciudad de México, antes y ahora.** Proyecto de refotografía sobre los lugares del exilio republicano español en la Ciudad de México (1939 en adelante). Cada lugar reúne la fotografía de archivo, el punto exacto donde se tomó, su estado actual y una toma nueva hecha desde el mismo ángulo.
 
-Piloto: 25 lugares.
+Piloto: 26 lugares.
 
 ## Estructura
 
@@ -34,10 +34,19 @@ docs/metodo.md        Cómo se busca, se ubica y se refotografía cada lugar
 | `coords` | `[lat, lng]` o `null` |
 | `coords_verificadas` | `false` mientras sean aproximadas; `true` tras verificar en campo |
 | `foto_antes`, `credito_antes` | Ruta en `fotos/antes/` y crédito completo del fondo |
+| `donde_antes` | Dónde se consulta o se pide la foto de archivo (`texto`, `url`) |
 | `foto_ahora`, `fecha_refoto` | Ruta en `fotos/ahora/` y fecha ISO de la toma |
+| `credito_ahora` | Autor de la foto actual (tú, o el autor de Commons si es provisional) |
+| `ahora_provisional` | `true` si la foto actual es de Commons y aún no es tu refoto |
+| `descarga_ahora` | Foto actual con licencia libre en Commons para usar mientras tanto (`url`, `licencia`) |
 | `fuentes` | Lista de `{titulo, url}` |
 
-El comparador deslizable aparece en una ficha en cuanto tiene `foto_antes` y `foto_ahora`.
+Cada ficha muestra:
+- **las dos fotos** → comparador con barra deslizable (la de archivo en blanco y negro a la izquierda);
+- **una sola** → esa foto, con un aviso de cuál falta;
+- **ninguna** → dónde conseguir cada una.
+
+Para añadir una foto: súbela como `fotos/antes/<id>.jpg` o `fotos/ahora/<id>.jpg` y escribe esa ruta en `foto_antes` o `foto_ahora`.
 
 ## Ver el sitio en local
 

@@ -16,7 +16,17 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "AGN, Hermanos Mayo: buscar la serie del 6 de marzo de 1945. Hay una toma publicada en la revista BiCentenario nº 45.",
+      "url": "https://revistabicentenario.com.mx/wp-content/uploads/2025/09/BiC_45_Entrevista_Recuerdos_exiliado_espa%C3%B1ol.pdf"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": {
+      "url": "https://commons.wikimedia.org/wiki/File:Hemiciclo_a_Juárez_y_Alameda_Central_03.jpg",
+      "licencia": "CC BY-SA 4.0"
+    },
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -42,7 +52,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Ateneo Español de México, biblioteca-archivo (Isabel la Católica 97).",
+      "url": null
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -68,7 +85,17 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "AGN, Archivo Fotográfico Hermanos Mayo. Consulta y solicitud de reproducción en sala.",
+      "url": "https://www.gob.mx/agn"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": {
+      "url": "https://commons.wikimedia.org/wiki/File:Estación_buenavista.jpg",
+      "licencia": "CC0"
+    },
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -94,7 +121,17 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Vista aérea de Tacubaya en 1933 (Fundación ICA), consultable en línea. Para tomas a pie de calle: AGN, Hermanos Mayo.",
+      "url": "https://artsandculture.google.com/asset/tacubaya-compañía-mexicana-aerofoto/-wHoW3ZC3NF4hA"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": {
+      "url": "https://commons.wikimedia.org/wiki/File:Edificio_Ermita_(2024).jpg",
+      "licencia": "CC BY-SA 4.0"
+    },
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -121,7 +158,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Libro Calle López. Barrio español, de Sergio de Miguel Agüero (Ateneo, 2019), y AGN, Hermanos Mayo.",
+      "url": null
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -144,7 +188,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Archivo familiar Villarías: pedir en el propio café.",
+      "url": null
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -167,7 +218,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Ateneo Español de México, biblioteca-archivo (Isabel la Católica 97).",
+      "url": null
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -194,7 +252,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Archivo familiar Villarías: pedir en el propio café.",
+      "url": null
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -217,7 +282,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Archivo Histórico de El Colegio de México.",
+      "url": "https://repositorio.colmex.mx/"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -240,7 +312,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Centro de Memoria Histórica del Colegio Madrid.",
+      "url": "https://www.centrodememoriahistoricacolegiomadrid.org.mx/"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -266,7 +345,17 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Centro de Memoria Histórica del Colegio Madrid.",
+      "url": "https://www.centrodememoriahistoricacolegiomadrid.org.mx/"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": {
+      "url": "https://commons.wikimedia.org/wiki/File:Estación_Mixcoac_de_la_Línea_7_del_Metro_de_la_Ciudad_de_México_01.jpg",
+      "licencia": "CC BY 4.0"
+    },
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -289,7 +378,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Ateneo Español de México, biblioteca-archivo (Isabel la Católica 97).",
+      "url": null
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -300,21 +396,32 @@
   },
   {
     "id": "13",
-    "estado": "B",
-    "titulo": "Embajada de la República Española",
+    "estado": "A",
+    "titulo": "Embajada de la República Española (casa Waters / Diez Barroso)",
     "fecha": "1931–1939",
-    "fondo": "Hermanos Mayo; prensa",
-    "toma": "Por localizar",
-    "lugar": "Londres 7, esq. Roma, col. Juárez",
-    "hoy": "Abandonada por décadas, ocupada, desalojada en 2019. En 2024 el gobierno capitalino anunció su compra o expropiación. Estado 2026 por verificar.",
+    "fondo": "SINAFO-Fototeca Nacional INAH; Guillermo Kahlo; Compañía Mexicana de Aerofoto (Fundación ICA)",
+    "toma": "Álvarez del Vayo en la embajada (1933, SINAFO); calle Londres y fachada sur (1904, G. Kahlo); aéreas de 1939 y 1951",
+    "lugar": "Londres 7, esq. Roma, col. Juárez, junto a la iglesia del Sagrado Corazón",
+    "hoy": "Casa de fines del XIX. Sede de la República desde 1931 y del gobierno en el exilio hasta 1946. Dañada en 1985, abandonada, invadida en 2000, con incendios y derrumbes; el sismo de 2017 hundió la estructura principal. Desalojada en 2019; en 2024 el gobierno capitalino anunció su compra o expropiación.",
     "consulta_maps": "Londres 7 Juárez",
     "coords": null,
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "El blog Grandes casas de México reúne unas 50 imágenes de la casa (1900–2018). Originales: la de 1933 en SINAFO (Fototeca Nacional INAH), las de 1904 de Guillermo Kahlo y las aéreas en Fundación ICA.",
+      "url": "https://grandescasasdemexico.blogspot.com/2018/08/la-casa-watersdiez-barroso-macedo-en.html"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
+      {
+        "titulo": "Grandes casas de México",
+        "url": "https://grandescasasdemexico.blogspot.com/2018/08/la-casa-watersdiez-barroso-macedo-en.html"
+      },
       {
         "titulo": "Milenio 2024",
         "url": "https://amp.milenio.com/politica/gobierno-cdmx-planea-comprar-sede-republica-espanola-mexico"
@@ -339,7 +446,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "AGN, Archivo Fotográfico Hermanos Mayo. Consulta y solicitud de reproducción en sala.",
+      "url": "https://www.gob.mx/agn"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -365,7 +479,17 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "UNAM, Facultad de Filosofía y Letras; apéndice de Francisco de la Maza en Apuntes para la historia de la FFyL (1954).",
+      "url": null
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": {
+      "url": "https://commons.wikimedia.org/wiki/File:Casa_de_los_mascarones_(CDMX),_detalles.jpg",
+      "licencia": "CC BY-SA 4.0"
+    },
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -391,7 +515,17 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Archivo Promotora Cultural Fernando Gamboa (cartel y fotos de sala de 1938).",
+      "url": null
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": {
+      "url": "https://commons.wikimedia.org/wiki/File:Fachada_del_Palacio_de_Bellas_Artes_en_restauración_2026_01.jpg",
+      "licencia": "CC BY 4.0"
+    },
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -414,7 +548,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "AGN, Archivo Fotográfico Hermanos Mayo. Consulta y solicitud de reproducción en sala.",
+      "url": "https://www.gob.mx/agn"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -437,7 +578,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "AGN, Archivo Fotográfico Hermanos Mayo. Consulta y solicitud de reproducción en sala.",
+      "url": "https://www.gob.mx/agn"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -460,7 +608,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Archivo del Instituto Luis Vives; libro de Julia Tuñón (INAH, 2014).",
+      "url": null
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -483,7 +638,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Exposición virtual Los colegios del exilio (Residencia de Estudiantes, CSIC).",
+      "url": "https://exposiciones.residencia.csic.es/colegiosexilio/en/exposicion/academia_c.htm"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -506,7 +668,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "Sin archivo unificado; ver estudio de Sandra García de Fez.",
+      "url": "https://core.ac.uk/download/71018608.pdf"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -529,7 +698,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "AGN, Archivo Fotográfico Hermanos Mayo. Consulta y solicitud de reproducción en sala.",
+      "url": "https://www.gob.mx/agn"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -552,7 +728,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "AGN, Archivo Fotográfico Hermanos Mayo. Consulta y solicitud de reproducción en sala.",
+      "url": "https://www.gob.mx/agn"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -575,7 +758,14 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "AGN, Archivo Fotográfico Hermanos Mayo. Consulta y solicitud de reproducción en sala.",
+      "url": "https://www.gob.mx/agn"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
@@ -601,12 +791,53 @@
     "coords_verificadas": false,
     "foto_antes": null,
     "credito_antes": null,
+    "donde_antes": {
+      "texto": "AGN, fondo Enrique Díaz, Delgado y García. Consulta y solicitud de reproducción en sala.",
+      "url": "https://www.gob.mx/agn"
+    },
     "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
     "fecha_refoto": null,
     "fuentes": [
       {
         "titulo": "AGN en Arts & Culture",
         "url": "https://artsandculture.google.com/story/EgVBpSlI6wu-cA"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "estado": "B",
+    "titulo": "Casa de Luis Buñuel",
+    "fecha": "1952–1983",
+    "fondo": "Archivo de la familia Buñuel; Filmoteca Española; AGN, Hermanos Mayo",
+    "toma": "Por localizar: fachada y jardín con Buñuel",
+    "lugar": "Cerrada de Félix Cuevas 27, colonia Del Valle",
+    "hoy": "España compró la casa a la familia en 2010, la reabrió en 2013 y en 2017 la cedió en comodato a México. Hoy es sede de la Academia Mexicana de Artes y Ciencias Cinematográficas.",
+    "consulta_maps": "Cerrada de Félix Cuevas 27 Del Valle",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "donde_antes": {
+      "texto": "Filmoteca Española (fondo Buñuel) y AGN, Hermanos Mayo, que fotografiaron sus rodajes.",
+      "url": null
+    },
+    "foto_ahora": null,
+    "credito_ahora": null,
+    "ahora_provisional": false,
+    "descarga_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "La Jornada 2017",
+        "url": "https://www.jornada.com.mx/2017/10/04/espectaculos/a07n1esp"
+      },
+      {
+        "titulo": "Chilango",
+        "url": "https://www.chilango.com/ocio/luis-bunuel-en-cdmx/"
       }
     ]
   }

@@ -1,0 +1,613 @@
+[
+  {
+    "id": "01",
+    "estado": "A",
+    "titulo": "Mitin en el Hemiciclo a Juárez",
+    "fecha": "1945",
+    "fondo": "AGN, Hermanos Mayo",
+    "toma": "Pie publicado: Hemiciclo a Juárez, 6 de marzo de 1945",
+    "lugar": "Hemiciclo a Juárez, Av. Juárez, Alameda Central",
+    "hoy": "El monumento sigue en pie. Hito fijo: la refoto más fácil de encuadrar.",
+    "consulta_maps": "Hemiciclo a Juárez",
+    "coords": [
+      19.4352,
+      -99.1446
+    ],
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Revista BiCentenario",
+        "url": "https://revistabicentenario.com.mx/wp-content/uploads/2025/09/BiC_45_Entrevista_Recuerdos_exiliado_espa%C3%B1ol.pdf"
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "estado": "A",
+    "titulo": "Ateneo Español de México",
+    "fecha": "1949–hoy",
+    "fondo": "Archivo del propio Ateneo",
+    "toma": "Fondo histórico 1878–1978, catálogo publicado en 2007",
+    "lugar": "Isabel la Católica 97, esq. San Jerónimo, Centro",
+    "hoy": "Sede activa. España la declaró Lugar de Memoria en 2024, el primero fuera de su territorio.",
+    "consulta_maps": "Isabel la Católica 97",
+    "coords": [
+      19.4326,
+      -99.1332
+    ],
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Ministerio, 2024",
+        "url": "https://mpt.gob.es/dam/es/portal/prensa/notas_de_prensa/notas/2024/06/20240613_ATENEOMEXICO.pdf"
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "estado": "B",
+    "titulo": "Llegada de refugiados a la capital",
+    "fecha": "1939",
+    "fondo": "AGN, Hermanos Mayo (serie Cronológico)",
+    "toma": "Buscar junto a HMA/CR1/1193.3 (Sinaia)",
+    "lugar": "Estación Buenavista, Cuauhtémoc",
+    "hoy": "Por verificar: la estación de 1939 no se conserva como era; hoy el sitio es terminal ferroviaria.",
+    "consulta_maps": "Estación Buenavista",
+    "coords": [
+      19.4462,
+      -99.1527
+    ],
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "AGN en Arts & Culture",
+        "url": "https://artsandculture.google.com/story/EgVBpSlI6wu-cA"
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "estado": "B",
+    "titulo": "Edificio Ermita",
+    "fecha": "1939–",
+    "fondo": "Fundación ICA (aérea 1933); Hermanos Mayo por buscar",
+    "toma": "Fondo Aerofotográfico Oblicuas, Tacubaya 1933",
+    "lugar": "Av. Jalisco 125, cruce con Revolución, Tacubaya",
+    "hoy": "En pie. Fue desalojado en la pandemia y en 2023 seguía en remodelación por la Fundación Mier y Pesado.",
+    "consulta_maps": "Edificio Ermita Tacubaya",
+    "coords": [
+      19.404,
+      -99.1853
+    ],
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Publimetro 2023",
+        "url": "https://www.publimetro.com.mx/plus/2023/07/16/edificio-ermita-90-anos-de-historias-del-gigante-de-tacubaya/"
+      },
+      {
+        "titulo": "Aérea 1933",
+        "url": "https://artsandculture.google.com/asset/tacubaya-compañía-mexicana-aerofoto/-wHoW3ZC3NF4hA"
+      }
+    ]
+  },
+  {
+    "id": "05",
+    "estado": "B",
+    "titulo": "Calle López, Vía del Exilio Español",
+    "fecha": "1940s",
+    "fondo": "Hermanos Mayo; libro de Sergio de Miguel Agüero",
+    "toma": "Calle López. Barrio español (Ateneo, 2019)",
+    "lugar": "Calle López, Centro Histórico",
+    "hoy": "La calle lleva una placa que la nombra Vía del Exilio Español.",
+    "consulta_maps": "Calle López Centro Histórico",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "El Universal",
+        "url": "https://www.eluniversal.com.mx/colaboracion/mochilazo-en-el-tiempo/nacion/sociedad/una-calle-de-espanoles-en-pleno-centro-de-mexico/"
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "estado": "B",
+    "titulo": "Café Villarías",
+    "fecha": "1942",
+    "fondo": "Archivo familiar Villarías",
+    "toma": "Pedir fotos a la familia",
+    "lugar": "Calle López, misma esquina desde 1942",
+    "hoy": "Sigue abierto como expendio de café. Dentro conserva el escudo del consulado republicano.",
+    "consulta_maps": "Café Villarías López",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Público",
+        "url": "https://www.publico.es/internacional/cafe-republicano-calle-exilio-mexico.html"
+      }
+    ]
+  },
+  {
+    "id": "07",
+    "estado": "B",
+    "titulo": "Centro Republicano Español",
+    "fecha": "1940s–2000",
+    "fondo": "Hermanos Mayo; boletín del Centro",
+    "toma": "Por localizar",
+    "lugar": "Calle López 60, Centro",
+    "hoy": "Funcionó ahí hasta 2000. La asociación se mudó a Desierto de los Leones 4878, Tetelpan.",
+    "consulta_maps": "López 60 Centro Histórico",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Público",
+        "url": "https://www.publico.es/internacional/cafe-republicano-calle-exilio-mexico.html"
+      },
+      {
+        "titulo": "Directorio consular",
+        "url": "https://exteriores.gob.es/Consulados/mexico/es/ViajarA/Paginas/Directorio-de-Instituciones-y-Centros-espa%c3%b1oles-en-M%c3%a9xico-.aspx"
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "estado": "B",
+    "titulo": "Casa de la familia Villarías",
+    "fecha": "1940s",
+    "fondo": "Archivo familiar",
+    "toma": "Por localizar",
+    "lugar": "Calle López 82, Centro",
+    "hoy": "Por verificar.",
+    "consulta_maps": "López 82 Centro Histórico",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Público",
+        "url": "https://www.publico.es/internacional/cafe-republicano-calle-exilio-mexico.html"
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "estado": "B",
+    "titulo": "La Casa de España en México",
+    "fecha": "1938",
+    "fondo": "Archivo Histórico de El Colegio de México",
+    "toma": "Dos despachos del Banco Nacional Hipotecario",
+    "lugar": "Av. Madero 32, Centro Histórico",
+    "hoy": "Por verificar uso actual del inmueble. La institución es hoy El Colegio de México, en el Ajusco.",
+    "consulta_maps": "Madero 32 Centro Histórico",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "COLMEX",
+        "url": "https://repositorio.colmex.mx/downloads/hm50tw16p?locale=es"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "estado": "B",
+    "titulo": "Colegio Madrid, \"el castillo\" de Mixcoac",
+    "fecha": "1941",
+    "fondo": "Centro de Memoria Histórica del Colegio Madrid",
+    "toma": "Libro Al andar se hace camino (75 años)",
+    "lugar": "Mixcoac, sobre la actual Av. Extremadura",
+    "hoy": "Demolido en 1958 al ampliar Av. Extremadura. Comparación de ruptura total.",
+    "consulta_maps": "Avenida Extremadura Mixcoac",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Colegio_Madrid"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "estado": "B",
+    "titulo": "Colegio Madrid, casa Limantour",
+    "fecha": "1958–1979",
+    "fondo": "Centro de Memoria Histórica del Colegio Madrid",
+    "toma": "Por localizar",
+    "lugar": "Av. Revolución, Mixcoac",
+    "hoy": "Demolida en 1979 para la estación Mixcoac del Metro (Línea 7).",
+    "consulta_maps": "Metro Mixcoac",
+    "coords": [
+      19.3757,
+      -99.1876
+    ],
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "SinEmbargo",
+        "url": "https://www.sinembargo.mx/3992357/los-80-anos-del-colegio-madrid/"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "estado": "B",
+    "titulo": "Ateneo Español, local de Morelos 26",
+    "fecha": "s. f.",
+    "fondo": "Archivo del Ateneo",
+    "toma": "Comunicación sobre el local, anexo 10 de tesis UNAM",
+    "lugar": "Av. Morelos 26, Centro",
+    "hoy": "Por verificar.",
+    "consulta_maps": "Avenida Morelos 26 Centro",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Tesis UNAM",
+        "url": "https://ru.dgb.unam.mx/jspui/bitstream/20.500.14330/TES01000704315/3/0704315.pdf"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "estado": "B",
+    "titulo": "Embajada de la República Española",
+    "fecha": "1931–1939",
+    "fondo": "Hermanos Mayo; prensa",
+    "toma": "Por localizar",
+    "lugar": "Londres 7, esq. Roma, col. Juárez",
+    "hoy": "Abandonada por décadas, ocupada, desalojada en 2019. En 2024 el gobierno capitalino anunció su compra o expropiación. Estado 2026 por verificar.",
+    "consulta_maps": "Londres 7 Juárez",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Milenio 2024",
+        "url": "https://amp.milenio.com/politica/gobierno-cdmx-planea-comprar-sede-republica-espanola-mexico"
+      },
+      {
+        "titulo": "Chilango 2019",
+        "url": "https://www.chilango.com/noticias/testimonios-desalojo-en-la-juarez/amp/"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "estado": "B",
+    "titulo": "Café Tupinamba",
+    "fecha": "1940s",
+    "fondo": "Hermanos Mayo; prensa",
+    "toma": "Por localizar",
+    "lugar": "Bolívar 44, Centro Histórico",
+    "hoy": "El café desapareció. Por verificar qué ocupa hoy el local.",
+    "consulta_maps": "Bolívar 44 Centro Histórico",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "SDP Noticias",
+        "url": "https://www.sdpnoticias.com/opinion/el-tupinamba-de-san-miguel-de-allende-un-rincon-artistico-cueva-de-flamenco-literatura-y-toreros/"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "estado": "B",
+    "titulo": "Casa de los Mascarones",
+    "fecha": "1939–1954",
+    "fondo": "UNAM, Facultad de Filosofía y Letras",
+    "toma": "Ruiz Gaytán, Apuntes para la historia de la FFyL (1954)",
+    "lugar": "Ribera de San Cosme, Santa María la Ribera",
+    "hoy": "El edificio sigue en pie. La Facultad, donde enseñaron Gaos y Zambrano, salió de ahí en 1954.",
+    "consulta_maps": "Casa de los Mascarones San Cosme",
+    "coords": [
+      19.4425,
+      -99.1612
+    ],
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Historia Mexicana",
+        "url": "https://historiamexicana.colmex.mx/index.php/RHM/article/download/590/481/787"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "estado": "B",
+    "titulo": "Exposición España antifascista",
+    "fecha": "1938",
+    "fondo": "Archivo Promotora Cultural Fernando Gamboa",
+    "toma": "Cartel de la muestra; fotos de sala por buscar",
+    "lugar": "Palacio de Bellas Artes",
+    "hoy": "En pie. Antecedente: la solidaridad antes del exilio masivo.",
+    "consulta_maps": "Palacio de Bellas Artes",
+    "coords": [
+      19.4352,
+      -99.1412
+    ],
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Memoria de Madrid",
+        "url": "https://www.memoriademadrid.es/download/attachment/457687/single_content"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "estado": "B",
+    "titulo": "Casa de Indalecio Prieto",
+    "fecha": "1962",
+    "fondo": "Prensa (Novedades, Siempre!); Hermanos Mayo",
+    "toma": "Velorio, febrero de 1962",
+    "lugar": "Nuevo León 103, Condesa",
+    "hoy": "Por verificar.",
+    "consulta_maps": "Nuevo León 103 Condesa",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Tzintzun",
+        "url": "https://www.redalyc.org/pdf/898/89839897007.pdf"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "estado": "B",
+    "titulo": "Mercado de San Juan",
+    "fecha": "1940s",
+    "fondo": "Hermanos Mayo; testimonios del Mapa colaborativo",
+    "toma": "Por localizar",
+    "lugar": "Barrio de San Juan, Centro",
+    "hoy": "Por verificar si el edificio es el mismo de los años cuarenta.",
+    "consulta_maps": "Mercado de San Juan",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Anabad",
+        "url": "https://www.anabad.org/un-mapa-multimedia-para-conservar-la-memoria-del-exilio-espanol-en-mexico/"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "estado": "C",
+    "titulo": "Instituto Luis Vives, primera sede",
+    "fecha": "1939",
+    "fondo": "Archivo del Instituto; Julia Tuñón (INAH, 2014)",
+    "toma": "Primer colegio del exilio, agosto de 1939",
+    "lugar": "Dirección original por fijar",
+    "hoy": "El Instituto sigue activo en otra sede.",
+    "consulta_maps": "Instituto Luis Vives",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "CSIC, colegios del exilio",
+        "url": "https://exposiciones.residencia.csic.es/colegiosexilio/en/exposicion/luisvives_c.htm"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "estado": "C",
+    "titulo": "Academia Hispano-Mexicana",
+    "fecha": "1940",
+    "fondo": "Archivo SEP; CSIC",
+    "toma": "Por localizar",
+    "lugar": "Dirección original por fijar",
+    "hoy": "Cerró ya convertida en universidad.",
+    "consulta_maps": "Academia Hispano Mexicana",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "CSIC",
+        "url": "https://exposiciones.residencia.csic.es/colegiosexilio/en/exposicion/academia_c.htm"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "estado": "C",
+    "titulo": "Instituto Hispano-Mexicano Ruiz de Alarcón",
+    "fecha": "1939–1943",
+    "fondo": "Sin archivo unificado",
+    "toma": "Por localizar",
+    "lugar": "Dirección por fijar",
+    "hoy": "Cerró en 1943; de su crisis nació el Colegio Madrid.",
+    "consulta_maps": "Ciudad de México centro",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Sandra García de Fez",
+        "url": "https://core.ac.uk/download/71018608.pdf"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "estado": "C",
+    "titulo": "Café Do Brasil",
+    "fecha": "1940s",
+    "fondo": "Testimonios; prensa",
+    "toma": "Por localizar",
+    "lugar": "Centro Histórico, dirección por confirmar",
+    "hoy": "Existe un Do Brasil La Balsa abierto en 1949; falta confirmar si es el mismo local.",
+    "consulta_maps": "Café Do Brasil Centro Histórico",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Emprendedor",
+        "url": "https://emprendedor.com/cafe-villarias-historia-exilio-espanol-cafe-tradicional-cdmx/"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "estado": "C",
+    "titulo": "Avenida Bucareli",
+    "fecha": "1940s",
+    "fondo": "Hermanos Mayo; Mapa colaborativo",
+    "toma": "Por localizar",
+    "lugar": "Bucareli, col. Juárez; tramo por definir",
+    "hoy": "Elegir un punto fijo cuando aparezca la foto.",
+    "consulta_maps": "Avenida Bucareli",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Anabad",
+        "url": "https://www.anabad.org/un-mapa-multimedia-para-conservar-la-memoria-del-exilio-espanol-en-mexico/"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "estado": "C",
+    "titulo": "Españoles camino del trabajo",
+    "fecha": "ca. 1940",
+    "fondo": "AGN, Hermanos Mayo",
+    "toma": "Pie: Españoles dirigiéndose a su trabajo en la ciudad de México",
+    "lugar": "Desconocido",
+    "hoy": "Caso de prueba ideal para búsqueda inversa: foto concreta, lugar sin dato.",
+    "consulta_maps": "Ciudad de México centro",
+    "coords": null,
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "Revista BiCentenario",
+        "url": "https://revistabicentenario.com.mx/wp-content/uploads/2025/09/BiC_45_Entrevista_Recuerdos_exiliado_espa%C3%B1ol.pdf"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "estado": "C",
+    "titulo": "Despedida en el andén, Niños de Morelia",
+    "fecha": "1937",
+    "fondo": "AGN, Díaz, Delgado y García",
+    "toma": "Calurosa despedida en el andén (1937)",
+    "lugar": "Estación por identificar; confirmar si fue en la capital",
+    "hoy": "Si la estación resulta fuera de la CDMX, sustituir esta ficha.",
+    "consulta_maps": "Estación Buenavista",
+    "coords": [
+      19.4462,
+      -99.1527
+    ],
+    "coords_verificadas": false,
+    "foto_antes": null,
+    "credito_antes": null,
+    "foto_ahora": null,
+    "fecha_refoto": null,
+    "fuentes": [
+      {
+        "titulo": "AGN en Arts & Culture",
+        "url": "https://artsandculture.google.com/story/EgVBpSlI6wu-cA"
+      }
+    ]
+  }
+]

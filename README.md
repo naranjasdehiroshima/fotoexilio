@@ -1,6 +1,6 @@
-# El exilio en la Ciudad de México, antes y ahora
+# Foto Exilio
 
-Proyecto de refotografía sobre los lugares del exilio republicano español en la Ciudad de México (1939 en adelante). Cada lugar reúne la fotografía de archivo, el punto exacto donde se tomó, su estado actual y una toma nueva hecha desde el mismo ángulo.
+**El exilio en la Ciudad de México, antes y ahora.** Proyecto de refotografía sobre los lugares del exilio republicano español en la Ciudad de México (1939 en adelante). Cada lugar reúne la fotografía de archivo, el punto exacto donde se tomó, su estado actual y una toma nueva hecha desde el mismo ángulo.
 
 Piloto: 25 lugares.
 
